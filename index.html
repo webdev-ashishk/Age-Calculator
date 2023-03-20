@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <title>Age-Calculator</title>
+    <!-- bootstrap css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h1 class="text-center fs-1 text-primary-emphasis">Age-Calculator</h1> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <!-- offset-md-3 will devide screen in two part 3 and 3 both side make 6 -->
+          <div class="card mt-5">
+            <div class="card-body">
+              <h1 class="card-title text-center text-uppercase">
+                Age Calculator
+              </h1>
+              <p classs="text-secondary">
+                <small>Provide Your Date of Birth</small>
+              </p>
+              <div class="row md-3">
+                <div class="col-md-4">
+                  <!-- date -->
+                  <div class="form-group mt-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Date"
+                      id="dateField"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- month -->
+                  <div class="form-group mt-4">
+                    <select name="form" id="monthField" class="form-control">
+                      <option value="" selected disabled>Month</option>
+                      <option value="january">January</option>
+                      <option value="fabruary">Fabruary</option>
+                      <option value="march">March</option>
+                      <option value="april">April</option>
+                      <option value="may">May</option>
+                      <option value="jun">June</option>
+                      <option value="july">July</option>
+                      <option value="august">August</option>
+                      <option value="september">September</option>
+                      <option value="december">December</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- year -->
+                  <div class="form-group mt-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Year"
+                      id="yearField"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-3 text-center">
+                <button onclick="calculateAge()" class="btn btn-primary">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap javascript file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
